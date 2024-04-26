@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #F37820;
+    height: 100vh;
+}
+
+.formulario{
+    width: 41rem;
+    height: 60rem;
+    background-color: white;
+    padding: 1.5rem;
+}
+.formulario__inova{
+   
+}
+
+.formulario__inova__informe{
+    width: 41.5rem;
+    height: 29.40; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.formulario__inova__informe input{
+    background-color: #FFFAF2;
+    width: 41.5rem;
+    height: 48.5;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: solid rgba(0, 0, 0, 0.158) 1px;
+    border-radius: 10px;
+}
+
+.posição__botoes__file{
+    display: flex;
+    justify-content: space-around;
+}
+  

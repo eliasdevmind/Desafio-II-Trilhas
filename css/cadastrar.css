@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #F37820; 
+    
+    
+}
+main{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+
+
+section{ 
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: nowrap;
+margin: 10rem 8rem 4rem;
+}
+
+.img{
+    display: flex;
+    flex-wrap: wrap;
+     width: 45%;
+
+}
+
+
+h1{
+    font-size: 2.5rem;
+}
+
+.formulario{
+    background-color: white;
+    border: solid black 1px;
+    border-radius: 25px ;
+
+
+}
+.formulario__posicao { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    gap: 2rem;
+   
+}
+
+
+
+.formulario__inova__informe{
+    width: 40rem;
+    height: 28; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.formulario__inova__informe input{
+    background-color: #FFFAF2;
+    width: 31rem;
+    height: 48.5;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: solid rgba(0, 0, 0, 0.158) 1px;
+    border-radius: 10px;
+}
+
+
+.form__select{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.form__select select{
+    background-color: #FFFAF2;
+    width: 15rem;
+    height: 48.5;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: solid rgba(0, 0, 0, 0.158) 1px;
+    border-radius: 10px;
+}
+.posicao__botoes__file{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    
+}
+  
+.posicao__botoes__file__ajuste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posicao__botoes__file__ajuste h2{
+    font-size: 1rem;
+}
+
+.posicao__botoes__file__ajuste p{
+    font-size: 0.7rem;
+}
+.posicao__botoes__file__ajuste div{
+    display: flex;
+    border: solid black 1px;
+    text-align: center;
+    align-items: center;
+    padding: 0.2rem;
+    gap: 1.rem;
+    border-radius: 5px;
+}
+
+.posicao__botoes__file__ajuste span{
+    color:#989692;
+}
+
+.posicao__botoes__file__ajuste button{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    color: #097E90;
+    border: solid #097E90 1px;
+    border-radius: 5px;
+}
+
+.form__botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.form__botoes__cancelar{
+width: 15rem;
+height: 2.5rem;
+color: #F37820;
+border: solid #F37820 1px;
+border-radius: 25px;
+
+
+}
+
+/* Define o estilo do botão quando um arquivo é selecionado */
+.botao-confirmado {
+    background-color: rgb(136, 221, 136);
+    
+    /* Outras propriedades de estilo do botão */
+}
+
+
+.form__botoes__cadastrar{
+    width: 15rem;
+    height: 2.5rem;
+    color:  white;
+    background-color: #F37820;
+    border-radius: 25px;
+    border: solid #F37820 1px;
+    
+
+     
+}
+
+
+
+
+@media only screen and (max-width: 920px) {
+    .img {
+        display: none;
+    }
+
+    .formulario {
+        width: 70%; /* Ajustar a largura do formulário */
+    }
+
+    .formulario__inova__informe {
+        width: 100%; /* Ajustar a largura dos inputs dentro do formulário */
+    }
+
+    .form__botoes {
+        flex-direction: column; /* Mudar para coluna para alinhar os botões verticalmente */
+        gap: 0.5rem; /* Espaçamento entre os botões */
+    }
+    main{
+      
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    section{
+        margin: 0;
+    }
+   
+
+        .form__select select {
+            width: 30%;
+        }
+
+        .form__select optional  {
+
+            width: 30%;
+        }
+
+    .form__botoes__cancelar{
+        width: 50%;
+      
+        
+        
+        }
+
+    .form__botoes__canssela, .form__botoes__cadastrar {
+        width: 50%; /* Estilizar os botões para ter largura completa na tela menor */
+    }
+    .formulario__inova__informe input{
+        width: 80%;
+    }
+}
+
+  

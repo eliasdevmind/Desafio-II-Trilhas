@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="./css/cadastrar.css">   
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="tamanho">
+            <div style="width: 100%">
+                <div class="formulario">
+                    <div class="formulario__posicao">
+                        <h1>Inscreva-se</h1>
+                        <form class="formulario__inova" action="">
+                            <div class="formulario__inova_input">
+                                <div class="formulario__inova__informe">
+                                    <input type="text" name="name" placeholder="Nome">
+                                    <input type="email" name="email" placeholder="E-mail">
+                                    <input type="number" placeholder="CPF">
+                                    <input type="tel" placeholder="Telefone">
+                                    <input type="text" placeholder="CEP">
+                                    <input type="text" placeholder="Endereço">
+
+                                    <div class="form__select">
+                                        <select name="cidade_municipio">
+                                            <option value="">Selecione uma cidade</option>
+                                            <option value="sao_luis">São Luís</option>
+                                            <option value="imperatriz">Imperatriz</option>
+                                        </select>
+
+                                        <select name="grau_estudantil">
+                                            <option value="">Selecione um grau de escolaridade</option>
+                                            <option value="fundamental">Fundamental</option>
+                                            <option value="medio">Médio</option>
+                                            <option value="superior">Superior</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="posicao__botoes__file">
+
+                                <div class="posicao__botoes__file__ajuste">
+                                    <h2>Documentos</h2>
+                                    <div>
+                                        <img src="./img/Vector.png" alt="">
+                                        <p>Selecione arquivo<br> ou arraste para cá<br>
+                                            <span>JPG, PNG ou PDF</span></p>
+                                        
+                                        <input type="file" id="documentos" style="display: none;" accept=".jpg, .png, .pdf">
+                                        <button type="button" onclick="document.getElementById('documentos').click();">Selecionar</button>
+                                    </div>
+                                </div>
+
+                                <div class="posicao__botoes__file__ajuste">
+                                    <h2>Comprovante de Residência</h2>
+                                    <div>
+                                        <img src="./img/Vector.png" alt="">
+                                        <p>Selecione arquivo<br> ou arraste para cá<br>
+                                            <span>JPG, PNG ou PDF</span></p>
+                                        
+                                        <input type="file" id="comprovante_residencia" style="display: none;" accept=".jpg, .png, .pdf">
+                                        <button type="button" onclick="document.getElementById('comprovante_residencia').click();">Selecionar</button>
+                                    </div>
+                                </div>
+
+                                <div class="posicao__botoes__file__ajuste">
+                                    <h2>Comprovante de Escolaridade</h2>
+                                    <div>
+                                        <img src="./img/Vector.png" alt="">
+                                        <p>Selecione arquivo<br> ou arraste para cá<br>
+                                            <span>JPG, PNG ou PDF</span></p>
+                                        
+                                        <input type="file" id="comprovante_escolaridade" style="display: none;" accept=".jpg, .png, .pdf">
+                                        <button type="button" onclick="document.getElementById('comprovante_escolaridade').click();">Selecionar</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="form__botoes">
+                                <input class="form__botoes__cancelar" type="submit" value="Cancelar">
+                                <input class="form__botoes__cadastrar" type="submit" value="Cadastrar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <img class="img" src="./img/inovaMaranhao.png" alt="" srcset="">
+        </section>
+    </main>
+
+   
+ 
+</body>
+
+</html>

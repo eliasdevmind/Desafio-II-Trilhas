@@ -6,26 +6,30 @@
 
 
 body{
-    background-color: #F37820; 
+    font-family: Arial, sans-serif;
+    background-color: #F37820;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     
     
 }
 main{
     display: flex;
     align-items: center;
-    height: 100vh;
+ 
 
 }
 
-
-
-
-section{ 
+.tamanho{ 
 display: flex;
 justify-content: space-around;
 align-items: center;
 flex-wrap: nowrap;
-margin: 10rem 8rem 4rem;
+margin: 10rem 12rem 4rem;
 }
 
 .img{
@@ -41,9 +45,15 @@ h1{
 }
 
 .formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
     background-color: white;
-    border: solid black 1px;
-    border-radius: 25px ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 
 
 }
@@ -51,6 +61,7 @@ h1{
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 1rem;
     gap: 2rem;
@@ -60,6 +71,9 @@ h1{
 
 
 .formulario__inova__informe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40rem;
     height: 28; 
     display: flex;
@@ -69,10 +83,24 @@ h1{
 
 }
 
+.formulario__inova__informe__informacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.formulario__inova_input{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
 .formulario__inova__informe input{
     background-color: #FFFAF2;
-    width: 31rem;
-    height: 48.5;
+    width: 40rem;
     padding: 0.5rem;
     font-size: 1rem;
     border: solid rgba(0, 0, 0, 0.158) 1px;
@@ -230,8 +258,33 @@ border-radius: 25px;
         width: 50%; /* Estilizar os botões para ter largura completa na tela menor */
     }
     .formulario__inova__informe input{
-        width: 80%;
+        width: 25rem;
+    }
+    .tamanho{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 800px;
+        margin: 0;
+    }
+
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #F37820;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
     }
 }
 
-  
+@media only screen and (max-width: 620px) {
+
+    .formulario__inova__informe input{
+        width: 18rem;
+    }
+    
+}

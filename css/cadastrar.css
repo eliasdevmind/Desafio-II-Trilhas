@@ -64,7 +64,7 @@ h1 {
 
 .posicao__botoes__file{
     display: flex;
-    margin: 2rem;
+    margin: 1rem;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
@@ -83,15 +83,13 @@ h1 {
 }
 
 .posicao__botoes__file__ajuste p{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
 .posicao__botoes__file__ajuste div{
     display: flex;
     border: solid black 1px;
     text-align: center;
     align-items: center;
-    padding: 0.2rem;
-    gap: 1.rem;
     border-radius: 5px;
 }
 

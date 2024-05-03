@@ -5,37 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./css/login.css">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="./css/cadastrar.css">
+    <script src="./js/script.js" defer></script>
 </head>
 
 <body>
     <main>
-        <div class="login-wrapper">
-            <div class="login-container">
-                <h1>Login</h1>
-                <form action="" method="POST">
-                    <div class="input-group">
-                        <label for="username">Nome de Usuário</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="password">Senha</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <div class="button-group">
-                        <button type="reset" class="cancel-button">Cancelar</button>
-                        <button type="submit" class="submit-button">Logar</button>
-                    </div>
-                    <div class="register-link">
-                        <a href="cadastrar.html">Você ainda não se Escrevel? Escreva-se aqui</a>
+        <section class="form-container">
+            <div class="form-content">
+                <h1>Inscreva-se</h1>
+                <form class="formulario__inova" action="submit_form.php" method="post" enctype="multipart/form-data">
+                    <fieldset class="formulario__inova_input">
+                        <legend>Informações Pessoais</legend>
+
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+
+                        <input type="email" id="email" name="email" placeholder="E-mail" required>
+
+                        <input type="number" id="cpf" name="cpf" placeholder="CPF" required>
+
+                        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+
+                        <input type="text" id="cep" name="cep" placeholder="CEP" required>
+
+                        <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+                    </fieldset>
+
+                    <fieldset class="form__select">
+                        <legend>Seleções</legend>
+                        <label for="cidade_municipio">Cidade/Município:</label>
+                        <select id="cidade_municipio" name="cidade_municipio" required>
+                            <option value="">Selecione uma cidade</option>
+                            <option value="sao_luis">São Luís</option>
+                            <option value="imperatriz">Imperatriz</option>
+                        </select>
+
+                        <label for="grau_estudantil">Grau de Escolaridade:</label>
+                        <select id="grau_estudantil" name="grau_estudantil" required>
+                            <option value="">Selecione um grau de escolaridade</option>
+                            <option value="fundamental">Fundamental</option>
+                            <option value="medio">Médio</option>
+                            <option value="superior">Superior</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="posicao__botoes__file">
+                        <legend>Documentos</legend>
+                        <div class="posicao__botoes__file__ajuste">
+                            <h2>RG/CPF</h2>
+                            <div>
+                                <img src="./img/Vector.png" width="20%" alt="">
+                                <p>Selecione arquivo<br> ou arraste para cá<br>
+                                    <span>JPG, PNG ou PDF</span></p>
+                                
+                                <input type="file" id="documentos" style="display: none;" accept=".jpg, .png, .pdf">
+                                <button type="button" onclick="document.getElementById('documentos').click();">Selecionar</button>
+                            </div>
+                        </div>
+
+                        <div class="posicao__botoes__file__ajuste">
+                            <h2>Comprovante de Residência</h2>
+                            <div>
+                                <img src="./img/Vector.png" width="20%" alt="">
+                                <p>Selecione arquivo<br> ou arraste para cá<br>
+                                    <span>JPG, PNG ou PDF</span></p>
+                                
+                                <input type="file" id="comprovante_residencia" style="display: none;" accept=".jpg, .png, .pdf">
+                                <button type="button" onclick="document.getElementById('comprovante_residencia').click();">Selecionar</button>
+                            </div>
+                        </div>
+
+                        <div class="posicao__botoes__file__ajuste">
+                            <h2>Comprovante de Escolaridade</h2>
+                            <div>
+                                <img src="./img/Vector.png" width="20%" alt="">
+                                <p>Selecione arquivo<br> ou arraste para cá<br>
+                                    <span>JPG, PNG ou PDF</span></p>
+                                
+                                <input type="file" id="comprovante_escolaridade" style="display: none;" accept=".jpg, .png, .pdf">
+                                <button type="button" onclick="document.getElementById('comprovante_escolaridade').click();">Selecionar</button>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form__botoes">
+                        <input class="form__botoes__cancelar" type="reset" value="Cancelar">
+                        <input class="form__botoes__cadastrar" type="submit" value="Cadastrar">
                     </div>
                 </form>
             </div>
-            <div class="image-container">
-                <img src="./img/inovaMaranhao.png" alt="Imagem" class="login-image">
-            </div>
-        </div>
+            <img class="img-background" src="./img/inovaMaranhao.png" alt="Inova Maranhão">
+        </section>
     </main>
 </body>
 

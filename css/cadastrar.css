@@ -1,4 +1,4 @@
-body, h1, p, input, button, label, select {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,27 +6,36 @@ body, h1, p, input, button, label, select {
    
 }
 
-/* Estilos globais */
+body{
+    background-color: #f47c24;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: #f47c24; 
+    
     
 }
+
 
 .form-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #f47c24; /* Cor de fundo */
+    background-color: #f47c24; 
     padding: 20px;
-    border-radius: 10px; /* Borda arredondada */
-    width: 100%; /* Estende o container para o comprimento total */
+    border-radius: 10px; 
+    width: 100%; 
 }
 
+
+
 .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex: 1;
     padding: 20px;
 }
@@ -35,22 +44,69 @@ form {
     max-width: 600px;
     padding: 20px;
     border-radius: 8px;
-    border: none; /* Remove a borda */
+    border: none; 
     background-color: #f9f9f9;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    text-align: center; /* Centraliza o título */
+    
+    
     margin-bottom: 20px;
 }
 
-/* Configurações da imagem de fundo */
 .img-background {
     flex: 1;
-    max-width: 50%; /* Define a largura máxima em 50% */
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
-    display: none; /* Inicialmente, a imagem está escondida */
+    max-width: 50%; 
+    object-fit: cover; 
+    display: none; 
+}
+
+.posicao__botoes__file{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    
+}
+  
+.posicao__botoes__file__ajuste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posicao__botoes__file__ajuste h2{
+    font-size: 1rem;
+}
+
+.posicao__botoes__file__ajuste p{
+    font-size: 0.7rem;
+}
+.posicao__botoes__file__ajuste div{
+    display: flex;
+    border: solid black 1px;
+    text-align: center;
+    align-items: center;
+    padding: 0.2rem;
+    gap: 1.rem;
+    border-radius: 5px;
+}
+
+.posicao__botoes__file__ajuste span{
+    color:#989692;
+}
+
+.posicao__botoes__file__ajuste button{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    color: #097E90;
+    border: solid #097E90 1px;
+    border-radius: 5px;
 }
 
 .form__botoes__cadastrar{
@@ -59,18 +115,16 @@ h1 {
     color: white;
 }
 .form__botoes__cancelar{
-    background-color: ;
-    border: solid  1px;
-    color: white;
+    background-color: white ;
+    border: solid #f47c24 1px;
+    color: #f47c24;
 }
-/* Exibe a imagem em dispositivos de largura maior */
 @media (min-width: 860px) {
     .img-background {
         display: block;
     }
 }
 
-/* Esconde a imagem em dispositivos menores para colocá-la atrás do formulário */
 @media (max-width: 860px) {
     .img-background {
         display: none;
@@ -78,13 +132,12 @@ h1 {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%; /* Cobre o formulário */
-        z-index: -1; /* Envia a imagem para trás do formulário */
-        opacity: 0.3; /* Opacidade para que o formulário seja visível */
+        height: 100%; 
+        z-index: -1; 
+        opacity: 0.3; 
     }
 }
 
-/* Estilizando campos de entrada, seleção e botões */
 input, select, button {
     width: 100%;
     padding: 10px;
@@ -94,19 +147,9 @@ input, select, button {
     outline: none;
 }
 
-button {
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #45a049;
-}
-
-/* Configurações para os botões de cancelamento e cadastro lado a lado separados */
 .form__botoes {
     display: flex;
-    justify-content: space-between; /* Separação entre os botões */
+    justify-content: space-between; 
     gap: 20px; 
 }
